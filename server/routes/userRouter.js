@@ -1,0 +1,11 @@
+import userController from "../controllers/userController.js";
+import express from "express";
+import auth from "../middleware/auth.js";
+import authAdmin from "../middleware/authAdmin.js";
+const userRouter = express.Router();
+userRouter.post("/register", userController.register);
+userRouter.post("/login", userController.login);
+userRouter.get("/logout", userController.logout);
+userRouter.get("/infor", auth, userController.getUser);
+userRouter.get("/all", auth, authAdmin, userController.getAllUsers);
+export default userRouter;
