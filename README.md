@@ -7,10 +7,10 @@ user: login, logout, getInfor
 #init server
 #npm install
 #run server at localhost:5000
-# npm start
+#npm start
 
 ####
-#client reactjs 
+# client reactjs 
 client have futures: form login, component admin, user
 admin: manage all user, information
 user: manage your information
@@ -18,7 +18,7 @@ user: manage your information
 #init client
 #npm install
 #run react-app at localhost:3000
-# npm start
+#npm start
 
 ##test
 #test with role admin:
